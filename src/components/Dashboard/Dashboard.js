@@ -9,7 +9,7 @@ const Dashboard = () => {
   const getEmail = sessionStorage.getItem("userEmail");
   console.log(getEmail);
   useEffect(() => {
-    fetch(`http://localhost:5000/check-admin`, {
+    fetch(`https://gentle-escarpment-52580.herokuapp.com/check-admin`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: getEmail }),

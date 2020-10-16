@@ -14,7 +14,7 @@ const OrderReview = () => {
   const onSubmit = (data) => {
     const orderReview = { ...loggedInUser, ...data };
     console.log(orderReview);
-    fetch("http://localhost:5000/addReview", {
+    fetch("https://gentle-escarpment-52580.herokuapp.com/addReview", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(orderReview),

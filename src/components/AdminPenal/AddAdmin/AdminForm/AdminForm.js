@@ -7,7 +7,7 @@ const AdminForm = () => {
   const history = useHistory();
   const onSubmit = (data) => {
     const addAdmin = { ...data };
-    fetch("https://rocky-fortress-91922.herokuapp.com/registerEvent", {
+    fetch("https://gentle-escarpment-52580.herokuapp.com/addAdmin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(addAdmin),

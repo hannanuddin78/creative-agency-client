@@ -18,7 +18,7 @@ const AddServiceForm = () => {
     serviceData.append("title", data.title);
     serviceData.append("designation", data.designation);
 
-    fetch("http://localhost:5000/addService", {
+    fetch("https://gentle-escarpment-52580.herokuapp.com/addService", {
       method: "POST",
       body: serviceData,
     })

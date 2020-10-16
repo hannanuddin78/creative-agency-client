@@ -24,7 +24,7 @@ const CustomerOrderForm = () => {
     formData.append("projectDetails", data.projectDetails);
     formData.append("price", data.price);
 
-    fetch("http://localhost:5000/addOrder", {
+    fetch("https://gentle-escarpment-52580.herokuapp.com/addOrder", {
       method: "POST",
       body: formData,
     })

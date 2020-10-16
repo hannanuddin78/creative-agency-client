@@ -34,7 +34,7 @@ const feedback = [
 const ClientFeedback = () => {
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/seeReview")
+    fetch("https://gentle-escarpment-52580.herokuapp.com/seeReview")
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);
