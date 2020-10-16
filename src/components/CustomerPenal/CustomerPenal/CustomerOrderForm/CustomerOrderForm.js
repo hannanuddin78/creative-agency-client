@@ -99,11 +99,7 @@ const CustomerOrderForm = () => {
               id="actual-btn"
               name="file"
               ref={register({ required: true })}
-              hidden
             />
-            <p className="Upload-btn" for="actual-btn">
-              Upload project file
-            </p>
             {errors.file && <span>This field is required</span>}
           </div>
         </div>
