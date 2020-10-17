@@ -24,14 +24,19 @@ const CustomerOrderForm = () => {
     formData.append("projectDetails", data.projectDetails);
     formData.append("price", data.price);
 
-    fetch("https://gentle-escarpment-52580.herokuapp.com/addOrder", {
+    // fetch("https://gentle-escarpment-52580.herokuapp.com/addOrder", {
+    //   method: "POST",
+    //   body: formData,
+    // });
+
+    fetch("http://localhost:5000/addOrder", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          history.push("/");
+          history.push("/orderList");
         }
       })
       .catch((error) => {
@@ -103,7 +108,7 @@ const CustomerOrderForm = () => {
             {errors.file && <span>This field is required</span>}
           </div>
         </div>
-        <button type="button" className="btn btn-dark dark-btn">
+        <button type="submit" className="btn btn-dark dark-btn">
           Send
         </button>
       </form>
