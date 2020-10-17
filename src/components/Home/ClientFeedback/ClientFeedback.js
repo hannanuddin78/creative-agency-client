@@ -3,6 +3,7 @@ import customer1 from "../../../images/customer-1.png";
 import customer2 from "../../../images/customer-2.png";
 import customer3 from "../../../images/customer-3.png";
 import FeedbackList from "./FeedbackList/FeedbackList";
+import loader from "../../../images/loder/200.gif";
 
 const feedback = [
   {
@@ -47,6 +48,9 @@ const ClientFeedback = () => {
         {review.map((fb) => (
           <FeedbackList key={fb._id} fb={fb}></FeedbackList>
         ))}
+        {review.length < 1 && (
+          <img src={loader} style={{ width: "300px", margin: "auto" }} alt="" />
+        )}
       </div>
     </section>
   );

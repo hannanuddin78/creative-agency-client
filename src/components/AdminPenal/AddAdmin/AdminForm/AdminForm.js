@@ -32,9 +32,11 @@ const AdminForm = () => {
             className="form-control"
           />
           {errors.Email && <span>This field is required</span>}
-          <button type="submit" className="btn dark-btn addService-btn">
-            Send
-          </button>
+          <div>
+            <button type="submit" className="btn addService-btn">
+              Send
+            </button>
+          </div>
         </div>
         <div className="col"></div>
       </div>

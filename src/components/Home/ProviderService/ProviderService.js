@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Services from "./Services/Services";
+import loader from "../../../images/loder/200.gif";
 
 const ProviderService = () => {
   const [service, setService] = useState([]);
@@ -19,6 +20,9 @@ const ProviderService = () => {
         {service.map((service) => (
           <Services key={service._id} service={service}></Services>
         ))}
+        {service.length < 1 && (
+          <img style={{ width: "300px", margin: "auto" }} src={loader} alt="" />
+        )}
       </div>
     </div>
   );

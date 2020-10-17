@@ -3,6 +3,7 @@ import { UserContext } from "../../../App";
 import CustomerPenalHeader from "../CustomerPenal/CustomerPenalHeader/CustomerPenalHeader";
 import SidebarCustomer from "../CustomerPenal/SidebarCustomer/SidebarCustomer";
 import ServiceList from "./ServiceList/ServiceList";
+import loader from "../../../images/loder/200.gif";
 
 const ServiceListOrder = () => {
   const [order, setOrder] = useState([]);
@@ -31,6 +32,13 @@ const ServiceListOrder = () => {
             {order.map((order) => (
               <ServiceList key={order._id} order={order}></ServiceList>
             ))}
+            {order.length < 1 && (
+              <img
+                src={loader}
+                style={{ width: "300px", margin: "auto" }}
+                alt=""
+              />
+            )}
           </div>
         </div>
       </div>

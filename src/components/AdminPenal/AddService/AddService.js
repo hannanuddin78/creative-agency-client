@@ -11,7 +11,7 @@ const AddService = () => {
         <div className="col-md-2">
           <AdminSidebar></AdminSidebar>
         </div>
-        <div className="col-md-10">
+        <div className="col-md-10 order-right p-5">
           <AddServiceForm></AddServiceForm>
         </div>
       </div>

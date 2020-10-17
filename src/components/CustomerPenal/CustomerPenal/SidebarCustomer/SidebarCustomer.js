@@ -63,7 +63,9 @@ const SidebarCustomer = () => {
       </ul>
       <div>
         <FontAwesomeIcon icon={faSignOutAlt} />
-        <span onClick={handLogOut}>Logout</span>
+        <span style={{ cursor: "pointer" }} onClick={handLogOut}>
+          Logout
+        </span>
       </div>
     </div>
   );

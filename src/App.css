@@ -103,3 +103,9 @@
 .link-a:hover {
   text-decoration: none !important;
 }
+#Status {
+  border: none;
+}
+.admin-btn {
+  background-color: #009444;
+}

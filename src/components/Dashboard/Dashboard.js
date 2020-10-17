@@ -4,10 +4,9 @@ import CustomerPenal from "../CustomerPenal/CustomerPenal/CustomerPenal";
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  const [admin, setAdmin] = useState(false);
+  const [admin, setAdmin] = useState(true);
 
   const getEmail = sessionStorage.getItem("userEmail");
-  console.log(getEmail);
   useEffect(() => {
     fetch(`https://gentle-escarpment-52580.herokuapp.com/check-admin`, {
       method: "POST",
@@ -17,10 +16,8 @@ const Dashboard = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.admin === true) {
-          //   console.log("he is a admin");
           setAdmin(true);
         } else if (data.admin === false) {
-          //   console.log("admin not found");
           setAdmin(false);
         }
       });
