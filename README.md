@@ -1,6 +1,6 @@
 # Creative Agency-Client
 
-	[Creative Agency Live Site Linkj](https://creative-own-agency.web.app/)
+[Creative Agency Live Site Linkj](https://creative-own-agency.web.app/)
 
 **Details**
 
@@ -10,4 +10,4 @@
 
 
 **Technology** 
-HTML, CSS, JS, Bootstrap, Firebase, React, Node JS, MongoDB, React Route
+--- HTML, CSS, JS, Bootstrap, Firebase, React, Node JS, MongoDB, React Route
